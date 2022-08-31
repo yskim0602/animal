@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+/* 글자모양, 크기, 색상 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size:12px;
+  color:#333333;
+  max-width: 414px;
+  margin: 0px auto;
+}
+
+a{
+  text-decoration: none;
+  color:#333333;
+}
+#toggle{display:none;}
+
+.total_btn{
+  display:block;
+  width:44px;height:44px;
+  position:absolute;
+  right:0px;top:10px;
+  padding:12px 0px 0px 10px;
+  cursor:pointer;
+}
+.bar{
+  display:inline-block;
+  width:36px;
+  height: 3px;
+  background-color:#333333;
+}
+h1{padding:10px 0px 0px 10px;}
+h1 img{height:60px;}
+
+.nav_wrap{
+  background-color: rgba(0, 0, 0, 0.801);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 100%;
+}
+.c_btn{
+  color: #ffffff;
+  font-size: 30px;
+  position: absolute;
+  left: 35px;
+  top: 20px;
+}
+.gnb{
+  background-color: #db6c63;
+  width: 75%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+/* 검색폼 서식 */
+.gnb fieldset{border: none;}
+.gnb legend{display: none;}
+.gnb input{
+  height: 30px; padding: 0px 10px;
+  border-radius: 3px;
+  border: none;
+}
+.gnb input[type=search]{
+  width: 130px;
+  margin-right: 6px;
+}
+.gnb input[type=button]{
+  width: 60px;
+  background-color: #5e5d5d;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.gnb > li:first-child{
+  line-height: 70px;
+  text-align: center;
+  background-color: #e99d96;
+}
+.gnb > li{
+  border-bottom: 1px solid #fff;
+  text-indent: 10px;
+}
+.gnb > li > label{
+  display: block;
+  cursor:pointer;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+/* 푸터서식 */
+footer{
+  position:relative;
+  text-align:center;
+}
+footer .t_btn{
+  position:absolute;
+  right:10px;top:12px;
+  padding:12px 8px 12px 8px;
+  background-color:#333333;
+  color:#ffffff;
+  font-size:14px;
+  border-radius:4px;
+}
+/* pc버튼 서식 */
+.pc_btn{
+  border:1px solid #808080;
+  padding:4px 10px;
+}
+address{
+  font-size:0.68em;
+  padding-top:15px;
+  font-style:normal;
+  line-height:20px;
+}
+.gnb > li i.fas{
+  float: right;
+  font-size: 1.2rem;
+  transform: translate(-10px, 10px);
+}
+.sub{
+  background-color: #f79890;
+  display: none;
+}
+.sub a{
+  color: #ffffff;
+  font-size: 0.9rem;
+  line-height: 40px;
+  display: block;
+  text-indent: 10px;
+}
+.gnb li input[type=checkbox]{
+  display: none;
+}
+#mnu01:checked + .sub{display: block;}
+#mnu02:checked + .sub{display: block;}
+#mnu03:checked + .sub{display: block;}
+#mnu04:checked + .sub{display: block;}
+#mnu05:checked + .sub{display: block;}
+#mnu06:checked + .sub{display: block;}
+
+#toggle:checked + header >.nav_wrap{
+  left: 0;
+}
+
+.c_btn{
+  cursor: pointer;
+}
+#h_icon{
+  font-size: 24px;
+  position: absolute;
+  left: 70%;
+  bottom: 3%;
+  /* padding-top: 550px;
+  padding-left: 250px; */
+}

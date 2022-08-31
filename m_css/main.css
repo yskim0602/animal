@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+main .slide{
+  height:60vh; /* vertical height */
+  overflow:hidden;
+  position: relative;
+}
+.con h2{
+  display: none;
+}
+.swiper-slide{
+  position: relative;
+}
+.swiper-slide > h2{
+  position: absolute;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  font-weight: 500;
+  width: 230px;
+  text-align: center;
+  padding: 6p 10px;
+  line-height: 30px;
+  left: 50%;
+  top: 26%;
+  transform: translate(-50%,-50%);
+  border-radius: 40px;
+}
+main .slide > h2{display:none;}
+.con nav{
+  width:90%;
+  margin:20px auto;
+  text-align:center;
+}
+.con nav > ul{
+  text-align:center;
+}
+.con nav > ul > li{
+  border:1px solid #ccc;
+  width:28%;
+  display:inline-block;
+  margin-bottom:4px;
+}
+.icon{
+  display:inline-block;
+}
+.mnu{
+  display:block;
+  padding:8px 0px;
+  font-size:1rem; /* 1rem = 16px */
+  font-weight: 500;
+}
+.con nav > ul > li .icon{
+  width:83px;height:66px;
+  background-image:url('../images/nav_icon.png');
+  background-size:360px;
+}
+.con nav > ul > li:nth-child(2) .icon{background-position:-81px 0px;}
+.con nav > ul > li:nth-child(3) .icon{background-position:-164px 0px;}
+.con nav > ul > li:nth-child(4) .icon{background-position:-250px 0px;width:100px;}
+.con nav > ul > li:nth-child(5) .icon{ background-position:0px -66px;}
+.con nav > ul > li:last-child .icon{background-position:-70px -66px;}
+
+/* 오시는 길 */
+.map_btn{
+  width:85.4%;
+  display:inline-block;
+  border:1px solid #ccc;
+  line-height:60px;  text-align:center;
+  font-size:16px;  font-weight:600;
+  color:rgb(95, 95, 95);
+}
+.map_btn .icon{
+  background-image:url('../images/nav_icon.png');
+  display:inline-block;
+  width:40px;height:34px;
+  background-size:360px;
+  background-position:-168px -64px;
+  transform:translateY(14px);  
+}
+/* 둔산점 전화번호 */
+.info{
+  width:96%;  height:70px;
+  margin:20px auto;
+  background-image:url('../images/info_back.png');
+  color:#ffffff;  
+  background-size:100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+span.fa-phone{
+  font-size: 24px;
+  padding-right: 40px;
+  display: inline-block;
+  transform: translateY(-10px);
+}
+.tel{
+  padding-top:16px;
+  line-height:20px;
+  display: inline-block;
+}
+.tel a{
+  color:#fff;font-size:16px;
+}
